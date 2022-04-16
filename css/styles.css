@@ -19,7 +19,7 @@
   --background-description-index: rgba(47, 48, 58, 0.8);
   --background-description-portfolio: rgba(33, 150, 243, 0.9);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --button-index-shadow: rgba(0, 0, 0, 0.15);
+  --button-shadow: rgba(0, 0, 0, 0.15);
   --hero-placeholder-color: rgba(117, 117, 117, 0.5);
   --footer-placeholder-color: rgba(255, 255, 255, 0.6);
 }
@@ -307,7 +307,7 @@ img {
   line-height: 1.19;
 }
 
-.button-index {
+.button {
   padding: 10px 32px;
 
   color: var(--primari-white-color);
@@ -318,11 +318,11 @@ img {
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px var(--button-index-shadow);
+  box-shadow: 0px 4px 4px var(--button-shadow);
 }
 
 /*----------------------------- Hero -----------------------------*/
-.hero {
+.page-hero {
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -343,7 +343,7 @@ img {
   background-clip: padding-box;
 }
 
-.hero-title {
+.page-hero__title {
   margin-bottom: 30px;
 
   color: var(--primari-white-color);
@@ -397,12 +397,12 @@ img {
   transition: transform 250ms var(--timing-function);
 }
 
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
 }
 
-.hero-form-title {
+.form__title {
   margin-bottom: 30px;
 
   font-weight: 700;
@@ -412,15 +412,15 @@ img {
   color: var(--title-text-color);
 }
 
-.form-group {
+.form__group {
   margin-bottom: 20px;
 }
 
-.form-field:not(:last-child) {
+.form__field:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.hero-form-label {
+.form__label {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -429,19 +429,11 @@ img {
   text-align: left;
 }
 
-.input-thumb {
+.form__thumb {
   position: relative;
 }
 
-.hero-form-icon {
-  position: absolute;
-  top: 11px;
-  left: 12px;
-
-  transition: fill 250ms var(--timing-function);
-}
-
-.form-input {
+.form__input {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 42px;
@@ -454,20 +446,28 @@ img {
   transition: border 250ms var(--timing-function), outline 250ms var(--timing-function);
 }
 
-.form-input:hover {
+.form__input:hover {
   cursor: pointer;
 }
 
-.form-input:focus-visible {
+.form__input:focus-visible {
   border: 1px solid #2196f3;
   outline: none;
 }
 
-.form-input:focus + .hero-form-icon {
+.form__icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.form__input:focus + .form__icon {
   fill: #2196f3;
 }
 
-.comment {
+.form__comment {
   padding: 12px 16px;
 
   width: 448px;
@@ -478,26 +478,26 @@ img {
   border-radius: 4px;
 }
 
-.comment:focus-visible {
+.form__comment:focus-visible {
   border: 1px solid #2196f3;
   outline: none;
 }
 
-.comment::placeholder {
+.form__comment::placeholder {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
   color: var(--hero-placeholder-color);
 }
 
-.form-checkbox {
+.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.checkbox {
+.checkbox__input {
   /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; */
@@ -516,7 +516,7 @@ img {
   margin: -1px;
 }
 
-.checkbox-icon {
+.checkbox__icon {
   content: '';
   display: inline-block;
   width: 16px;
@@ -529,7 +529,7 @@ img {
     background-origin, border-color 250ms var(--timing-function);
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox__input:checked + .checkbox__icon {
   background-color: var(--accent-color);
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 10'%3E%3Cpath d='m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
   background-size: contain;
@@ -538,21 +538,21 @@ img {
   border-color: transparent;
 }
 
-.checkbox-text {
+.checkbox__text {
   line-height: 1.71;
 }
 
-.checkbox-link {
+.checkbox__link {
   color: var(--accent-color);
 }
 
-.button-send {
+.button--modal {
   padding: 10px 56px;
   cursor: pointer;
   /* margin-bottom: 40px; */
 }
 
-.button-close {
+.close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -564,12 +564,12 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.icon-close {
-  fill: currentColor;
+.close:hover {
+  color: var(--accent-color);
 }
 
-.button-close:hover {
-  color: var(--accent-color);
+.close__icon {
+  fill: currentColor;
 }
 
 /*----------------------------- Features -----------------------------*/
