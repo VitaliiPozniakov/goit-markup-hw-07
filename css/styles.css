@@ -493,6 +493,7 @@ img {
 .form-checkbox {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -553,8 +554,8 @@ img {
 
 .button-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   padding: 0px;
   height: 30px;
 
