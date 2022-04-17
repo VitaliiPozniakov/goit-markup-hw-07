@@ -603,39 +603,6 @@ img {
   align-items: center;
 }
 
-/* Иконки можно как фон задать, если они не интерактивные: */
-/* .feature-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: var(--secondary-background-color-light);
-  border-radius: 4px;
-}
-
-.feature-item:nth-child(1)::before {
-  background-image: url(../images/features-antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.feature-item:nth-child(2)::before {
-  background-image: url(../images/features-clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.feature-item:nth-child(3)::before {
-  background-image: url(../images/features-diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.feature-item:nth-child(4)::before {
-  background-image: url(../images/features-astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 .feature-card__title {
   color: var(--title-text-color);
   font-size: 14px;
@@ -688,21 +655,16 @@ img {
 }
 
 /* -----------------------------Team----------------------------- */
-.section.team {
+.section__background-light {
   background-color: var(--secondary-background-color-light);
 }
 
-.team-list {
+.team-card {
   display: flex;
   justify-content: space-between;
 }
 
-/* А можно вместо justify-content: space-between в предыдущем правиле (во флексе) вот так сделать */
-/* .team-item:not(:last-child) {
-  margin-right: 30px;
-} */
-
-.team-item {
+.team-card__item {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-bottom-left-radius: 4px;
@@ -710,15 +672,15 @@ img {
   background-color: var(--primari-white-color);
 }
 
-.team-content {
+.team-card__meta {
   padding: 30px 32px;
 }
 
-.team-list .title {
+.team-card__name {
   text-align: center;
 }
 
-.team-item .text {
+.team-card__position {
   margin-bottom: 16px;
 
   font-size: 16px;
