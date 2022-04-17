@@ -162,7 +162,7 @@ img {
   color: var(--logo-black);
 }
 
-.logo-white {
+.logo--white {
   color: var(--primari-white-color);
 }
 
@@ -722,14 +722,14 @@ img {
 
 /* -----------------------------Footer ----------------------------- */
 
-.footer-main {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--secondary-background-color-dark);
 }
 
-.footer.container {
+.page-footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -738,39 +738,32 @@ img {
   margin-right: 70px;
 }
 
-.contact-list .adress {
+.adres-group__link {
+  color: var(--secondary-white-color);
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.adres-group__link--white {
   color: var(--primari-white-color);
   line-height: 1.71;
 
   transition: color 250ms var(--timing-function);
 }
 
-.contact-list .link {
-  color: var(--secondary-white-color);
-  line-height: 1.71;
-  text-decoration: none;
-
-  transition: color 250ms var(--timing-function);
-}
-
-.contact-list .adress:focus,
-.contact-list .adress:hover,
-.contact-list .link:focus,
-.contact-list .link:hover {
+.adres-group__link:focus,
+.adres-group__link:hover {
   color: var(--accent-color);
 }
 
-.contact-list .link,
-.contact-list .adress {
-  font-style: normal;
-  text-decoration: none;
-}
-
-.contact-list .list-item:not(:last-child) {
+.adres-group__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-adres-group {
+.adres-group {
   margin-top: 20px;
 }
 
