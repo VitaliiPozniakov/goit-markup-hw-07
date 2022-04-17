@@ -102,14 +102,11 @@ img {
   margin-right: 10px;
 }
 
-.social-networking__item a {
+.social-networking__link {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.social-networking__link {
-  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -767,7 +764,7 @@ img {
   margin-top: 20px;
 }
 
-.footer-text {
+.page-footer__text {
   display: block;
   margin-bottom: 20px;
 
@@ -778,15 +775,15 @@ img {
   text-transform: uppercase;
 }
 
-.footer-social-link {
+.page-footer__social-networking .social-networking__link {
   background-color: var(--background-icon-footer-color);
   color: var(--primari-white-color);
 
   transition: background-color 250ms var(--timing-function);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.page-footer__social-networking .social-networking__link:hover,
+.page-footer__social-networking .social-networking__link:focus {
   background-color: var(--accent-color);
 }
 
