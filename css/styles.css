@@ -289,6 +289,10 @@ img {
   padding-bottom: 94px;
 }
 
+.section--background-light {
+  background-color: var(--secondary-background-color-light);
+}
+
 .section--without-padding-top {
   padding-top: 0px;
 }
@@ -655,9 +659,6 @@ img {
 }
 
 /* -----------------------------Team----------------------------- */
-.section__background-light {
-  background-color: var(--secondary-background-color-light);
-}
 
 .team-card {
   display: flex;
@@ -690,12 +691,12 @@ img {
 
 /* -----------------------------Client----------------------------- */
 
-.client-list {
+.client-card {
   display: flex;
   justify-content: space-between;
 }
 
-.client-link {
+.client-card__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--border-client-color);
@@ -709,13 +710,13 @@ img {
   transition: border-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-card__link:hover,
+.client-card__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.client-icon {
+.client-card__icon {
   fill: currentColor;
 }
 
