@@ -551,7 +551,7 @@ img {
   color: var(--accent-color);
 }
 
-.button--modal {
+.modal .button {
   padding: 10px 56px;
   cursor: pointer;
   /* margin-bottom: 40px; */
@@ -791,11 +791,11 @@ img {
   margin-left: auto;
 }
 
-.form-content {
+.footer-form__content {
   display: flex;
 }
 
-.footer-input {
+.footer-form__input {
   margin-right: 12px;
   width: 358px;
   padding-top: 15px;
@@ -810,13 +810,24 @@ img {
   color: var(--footer-placeholder-color);
 }
 
-.footer-input::placeholder {
+.footer-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: var(--footer-placeholder-color);
 }
 
-.button-footer {
+.footer-form__text {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--primari-white-color);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-form .button {
   padding: 10px 29px;
 
   display: flex;
@@ -824,7 +835,7 @@ img {
   width: 200px;
 }
 
-.icon-send {
+.footer-form__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
