@@ -1,0 +1,11 @@
+.page-footer__social-networking .social-networking__link {
+  background-color: var(--background-icon-footer-color);
+  color: var(--primari-white-color);
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.page-footer__social-networking .social-networking__link:hover,
+.page-footer__social-networking .social-networking__link:focus {
+  background-color: var(--accent-color);
+}

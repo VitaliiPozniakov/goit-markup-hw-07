@@ -1,0 +1,28 @@
+.adres-group__link {
+  color: var(--secondary-white-color);
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.adres-group__link--white {
+  color: var(--primari-white-color);
+  line-height: 1.71;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.adres-group__link:focus,
+.adres-group__link:hover {
+  color: var(--accent-color);
+}
+
+.adres-group__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adres-group {
+  margin-top: 20px;
+}

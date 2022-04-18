@@ -1,0 +1,37 @@
+.section__title--without-margin {
+  margin: 0px;
+}
+
+.feature-card {
+  display: flex;
+}
+
+.feature-card__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-card__thumb {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-background-color-light);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card__title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feature-card__text {
+  line-height: 1.71;
+  width: 270px;
+}
