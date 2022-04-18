@@ -40,3 +40,30 @@
 
   transition: transform 250ms var(--timing-function);
 }
+
+.modal .button {
+  padding: 10px 56px;
+  cursor: pointer;
+  /* margin-bottom: 40px; */
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0px;
+  height: 30px;
+
+  border: none;
+  background-color: var(--primari-white-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.close:hover {
+  color: var(--accent-color);
+}
+
+.close__icon {
+  fill: currentColor;
+}
+
