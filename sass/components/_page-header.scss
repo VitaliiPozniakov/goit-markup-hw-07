@@ -2,16 +2,10 @@
   position: relative;
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid var(--border-header-color);
+  border-bottom: 1px solid $border-header-color;
 }
 
 .page-header__container {
-  display: flex;
-  align-items: center;
+  @extend %centeredFlex;
   justify-content: space-between;
-}
-
-.page-header .main-nav {
-  display: flex;
-  align-items: center;
 }

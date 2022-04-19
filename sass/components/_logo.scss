@@ -1,5 +1,5 @@
 .logo {
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -8,9 +8,9 @@
 }
 
 .logo--black {
-  color: var(--logo-black);
+  color: $logo-black;
 }
 
 .logo--white {
-  color: var(--primari-white-color);
+  color: $primari-white-color;
 }

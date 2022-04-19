@@ -17,19 +17,15 @@
 .activities-card__label {
   position: absolute;
   bottom: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  @extend %centeredFlex;
   width: 370px;
   height: 70px;
-  background-color: var(--background-description-index);
+  background-color: $background-description-index;
 }
 
 .activities-card__text {
   font-weight: 700;
   line-height: 1.14;
-  color: var(--primari-white-color);
+  color: $primari-white-color;
   text-transform: uppercase;
 }

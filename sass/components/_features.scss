@@ -11,20 +11,16 @@
 }
 
 .feature-card__thumb {
+  @extend %centeredFlex;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-
-  background-color: var(--secondary-background-color-light);
+  background-color: $secondary-background-color-light;
   border-radius: 4px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .feature-card__title {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;

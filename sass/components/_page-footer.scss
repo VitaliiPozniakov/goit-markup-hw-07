@@ -1,8 +1,7 @@
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  background-color: var(--secondary-background-color-dark);
+  background-color: $secondary-background-color-dark;
 }
 
 .page-footer .container {
@@ -10,15 +9,10 @@
   align-items: baseline;
 }
 
-.footer-contact {
-  margin-right: 70px;
-}
-
 .page-footer__text {
   display: block;
   margin-bottom: 20px;
-
-  color: var(--primari-white-color);
+  color: $primari-white-color;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
