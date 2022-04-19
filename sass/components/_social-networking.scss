@@ -1,4 +1,5 @@
 .social-networking {
+  @extend %list;
   @extend %centeredFlex;
   width: 206px;
 }

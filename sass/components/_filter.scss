@@ -1,4 +1,5 @@
 .filter {
+  @extend %list;
   @extend %centeredFlex;
   margin-bottom: 50px;
 }

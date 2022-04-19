@@ -1,3 +1,3 @@
 .main-nav {
-  @extend %centeredFlex;
+  @include centeredFlex(center);
 }

@@ -4,6 +4,7 @@
 
 .feature-card {
   display: flex;
+  @extend %list;
 }
 
 .feature-card__item:not(:last-child) {

@@ -1,4 +1,10 @@
-.page-header__container, .main-nav, .contacts-nav__link, .checkbox, .feature-card__thumb, .activities-card__label, .social-networking, .social-networking__link, .client-card__link, .footer-form .button, .filter {
+.site-nav, .contacts-nav, .feature-card, .activities-card, .team-card, .social-networking, .client-card, .adres-group, .filter, .card-set {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.page-header__container, .contacts-nav__link, .checkbox, .feature-card__thumb, .activities-card__label, .social-networking, .social-networking__link, .client-card__link, .footer-form .button, .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,12 +45,6 @@ p {
 img {
   display: block;
   max-width: 100%;
-}
-
-.list {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
 }
 
 .visually-hidden {
@@ -89,6 +89,18 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-nav {
