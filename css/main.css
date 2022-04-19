@@ -265,7 +265,7 @@ img {
       from(rgba(47, 48, 58, 0.4)),
       to(rgba(47, 48, 58, 0.4))
     ),
-    url('../../images/bcg-hero.jpg');
+    url('../images/bcg-hero.jpg');
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/bcg-hero.jpg');
   background-size: cover;
